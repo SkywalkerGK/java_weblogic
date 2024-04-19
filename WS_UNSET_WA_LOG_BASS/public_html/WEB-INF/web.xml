@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'x-windows-874'?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5" xmlns="http://java.sun.com/xml/ns/javaee">
+  <servlet>
+    <servlet-name>GetWALogServlet</servlet-name>
+    <servlet-class>wa_unset_wa.GetWALogServlet</servlet-class>
+  </servlet>
+    <servlet>
+    <servlet-name>GetWALog</servlet-name>
+    <servlet-class>wa_unset_wa.GetWALog</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetWALogServlet</servlet-name>
+    <url-pattern>/GetWALogGet</url-pattern>
+  </servlet-mapping>
+    <servlet-mapping>
+    <servlet-name>GetWALog</servlet-name>
+    <url-pattern>/GetWALog</url-pattern>
+  </servlet-mapping>
+</web-app>
